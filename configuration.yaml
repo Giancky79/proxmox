@@ -14,6 +14,10 @@ mqtt:
   # user: my_user
   # password: my_password
 
+# Enable the frontend, default port 8080, for change, delete true and uncomment port
+frontend: true
+#  port: 8080
+
 # Serial settings
 serial:
   # Location of CC2531 USB sniffer
