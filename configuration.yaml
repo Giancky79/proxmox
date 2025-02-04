@@ -1,0 +1,24 @@
+version: 4
+homeassistant:
+  enabled: true
+frontend:
+  enabled: true
+  port: se volete porta diversa dalla 8080
+serial:
+  adapter: tipo di chip
+  port: /dev/ttyACM0
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost:1883
+  user: user
+  password: password
+  reject_unauthorized: true
+  include_device_information: true
+  keepalive: 60
+  force_disable_retain: false
+  maximum_packet_size: 1048576
+advanced:
+  network_key: GENERATE
+  pan_id: GENERATE
+  ext_pan_id: GENERATE
+  channel: 11
